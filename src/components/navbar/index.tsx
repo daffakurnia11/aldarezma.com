@@ -15,7 +15,7 @@ export default function Navbar() {
         initial={{ opacity: 0, y: "-100%" }}
         animate={isOpen ? { opacity: 1, y: 180 } : { opacity: 0, y: "-100%" }}
         transition={{ type: "tween", duration: 0.5, delay: 0.3 }}
-        className="absolute -z-10 flex flex-col items-center justify-center gap-8 bg-primary-600 w-full py-4 rounded-b-lg"
+        className="md:hidden absolute -z-10 flex flex-col items-center justify-center gap-8 bg-primary-600 w-full py-4 rounded-b-lg"
       >
         <button className="cursor-pointer">
           <Typography.Paragraph size="lg" className="text-neutral-100">
@@ -47,7 +47,7 @@ export default function Navbar() {
         </button>
       </motion.div>
 
-      <div className="container mx-auto flex items-center justify-between w-full bg-primary-600">
+      <div className="container mx-auto flex items-center justify-between w-full bg-primary-600 px-5">
         <Typography.Heading level={5} className="text-neutral-100">
           AldaRezma
         </Typography.Heading>
@@ -63,7 +63,7 @@ export default function Navbar() {
         </button>
 
         {/* Desktop Menu Navbar */}
-        <div className="md:flex hidden items-center justify-center w-fit gap-8">
+        <div className="md:flex hidden items-center justify-center w-fit lg:gap-8 gap-4">
           <button className="cursor-pointer">
             <Typography.Paragraph size="lg" className="text-neutral-100">
               Benefit
