@@ -108,8 +108,8 @@ export default function Benefit() {
           <div className="bg-secondary-600 p-6 rounded-xl w-full max-w-100 mx-auto">
             <div className="aspect-square w-full h-auto relative overflow-hidden rounded-sm">
               <Image
-                src={"/img/benefit-1-img.jpg"}
-                alt="Benefit 1"
+                src={"/img/benefit-1-img.JPG"}
+                alt="Benefit 1 Image"
                 className="object-cover rounded-sm absolute w-full h-full"
                 width={500}
                 height={500}
@@ -127,8 +127,8 @@ export default function Benefit() {
           <div className="bg-secondary-600 p-6 rounded-xl w-full max-w-100 mx-auto">
             <div className="aspect-square w-full h-auto relative overflow-hidden rounded-sm">
               <Image
-                src={"/img/benefit-2-img.jpg"}
-                alt="Benefit 1"
+                src={"/img/benefit-2-img.JPG"}
+                alt="Benefit 2 Image"
                 className="object-cover rounded-sm absolute w-full h-full"
                 width={500}
                 height={500}
@@ -144,8 +144,8 @@ export default function Benefit() {
           <div className="bg-secondary-600 p-6 rounded-xl w-full max-w-100 mx-auto">
             <div className="aspect-square w-full h-auto relative overflow-hidden rounded-sm">
               <Image
-                src={"/img/benefit-3-img.jpg"}
-                alt="Benefit 1"
+                src={"/img/benefit-3-img.JPG"}
+                alt="Benefit 3 Image"
                 className="object-cover rounded-sm absolute w-full h-full"
                 width={500}
                 height={500}
