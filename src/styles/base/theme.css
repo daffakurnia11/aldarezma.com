@@ -1,0 +1,118 @@
+@theme {
+  /* Breakpoints */
+  --breakpoint-sm: 36rem; /* 576px */
+  --breakpoint-md: 48rem; /* 768px */
+  --breakpoint-lg: 62rem; /* 992px */
+  --breakpoint-xl: 80rem; /* 1280px */
+  --breakpoint-2xl: 90rem; /* 1440px */
+
+  /* Primary Color */
+  --color-primary-50: #c9cdd4;
+  --color-primary-100: #aeb4be;
+  --color-primary-200: #939ca9;
+  --color-primary-300: #778393;
+  --color-primary-400: #5c6a7d;
+  --color-primary-500: #415168;
+  --color-primary-600: #263852;
+  --color-primary-700: #202f44;
+  --color-primary-800: #192537;
+  --color-primary-900: #131c29;
+  --color-primary-1000: #0d131b;
+
+  /* Secondary Color */
+  --color-secondary-50: #efe9de;
+  --color-secondary-100: #e7decd;
+  --color-secondary-200: #dfd3bc;
+  --color-secondary-300: #d6c8ab;
+  --color-secondary-400: #cebd9b;
+  --color-secondary-500: #c6b28a;
+  --color-secondary-600: #bea779;
+  --color-secondary-700: #9e8b65;
+  --color-secondary-800: #7f6f51;
+  --color-secondary-900: #5f543d;
+  --color-secondary-1000: #3f3828;
+
+  /* Neutral Color */
+  --color-neutral-100: #e4e2e7;
+  --color-neutral-200: #d0ced3;
+  --color-neutral-300: #bbbabe;
+  --color-neutral-400: #a7a6aa;
+  --color-neutral-500: #939295;
+  --color-neutral-600: #7f7e80;
+  --color-neutral-700: #6b6a6c;
+  --color-neutral-800: #565657;
+  --color-neutral-900: #424243;
+  --color-white: #f8f6fc;
+  --color-black: #2e2e2e;
+
+  /* Montserrat Font Display */
+  --font-montserrat: "Montserrat";
+
+  /* Border Radius */
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-base: 8px;
+  --radius-lg: 10px;
+  --radius-xl: 12px;
+  --radius-full: 9999px;
+
+  /* Heading 1 */
+  --text-6xl: 48px;
+  --text-6xl--line-height: 60px;
+  --text-6xl--letter-spacing: 0;
+  --text-6xl--font-weight: 700;
+
+  /* Heading 2 */
+  --text-5xl: 42px;
+  --text-5xl--line-height: 48px;
+  --text-5xl--letter-spacing: 0;
+  --text-5xl--font-weight: 700;
+
+  /* Heading 3 */
+  --text-4xl: 36px;
+  --text-4xl--line-height: 42px;
+  --text-4xl--letter-spacing: 0;
+  --text-4xl--font-weight: 700;
+
+  /* Heading 4 */
+  --text-3xl: 30px;
+  --text-3xl--line-height: 36px;
+  --text-3xl--letter-spacing: 0;
+  --text-3xl--font-weight: 600;
+
+  /* Heading 5 */
+  --text-2xl: 24px;
+  --text-2xl--line-height: 32px;
+  --text-2xl--letter-spacing: 0;
+  --text-2xl--font-weight: 600;
+
+  /* Heading 6 */
+  --text-xl: 20px;
+  --text-xl--line-height: 28px;
+  --text-xl--letter-spacing: 0;
+  --text-xl--font-weight: 600;
+
+  /* Text Large */
+  --text-lg: 18px;
+  --text-lg--line-height: 24px;
+  --text-lg--letter-spacing: 0;
+  --text-lg--font-weight: 500;
+
+  /* Text Base */
+  --text-base: 16px;
+  --text-base--line-height: 20px;
+  --text-base--letter-spacing: 0;
+  --text-base--font-weight: 400;
+
+  /* Text Small */
+  --text-sm: 14px;
+  --text-sm--line-height: 16px;
+  --text-sm--letter-spacing: 0;
+  --text-sm--font-weight: 400;
+
+  /* Text Extra Small */
+  --text-xs: 12px;
+  --text-xs--line-height: 12px;
+  --text-xs--letter-spacing: 0;
+  --text-xs--font-weight: 400;
+}
