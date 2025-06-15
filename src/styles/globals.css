@@ -20,3 +20,22 @@ section.jumbotron::before {
   z-index: -1;
   pointer-events: none; /* allow clicks through */
 }
+
+section.headline {
+  position: relative;
+  background-image: url("../../public/img/headline-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+  overflow: hidden;
+}
+
+section.headline::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(32, 47, 68, 0.86); /* white at 78% opacity */
+  z-index: -1;
+  pointer-events: none; /* allow clicks through */
+}

@@ -64,8 +64,8 @@ export default function Jumbotron() {
             src={"/img/jumbotron-img.png"}
             alt="Alda Rezma Photo"
             className="mb-4 sm:mb-0"
-            width={1000}
-            height={1000}
+            width={630}
+            height={670}
           />
         </div>
       </div>
