@@ -3,6 +3,7 @@ import Jumbotron from "./_components/Jumbotron";
 import Headline from "./_components/Headline";
 import Benefit from "./_components/Benefit";
 import Material from "./_components/Material";
+import Testimonial from "./_components/Testimonial";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Headline />
       <Benefit />
       <Material />
+      <Testimonial />
     </>
   );
 }
