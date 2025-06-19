@@ -5,7 +5,7 @@ import React from "react";
 export default function Certification() {
   return (
     <section className="certification">
-      <div className="container mx-auto px-5 py-10">
+      <div className="container mx-auto px-5 py-10 max-w-[1320px]">
         <Typography.Heading
           level={2}
           className="text-primary-600 mb-6 md:!text-5xl !text-3xl"
