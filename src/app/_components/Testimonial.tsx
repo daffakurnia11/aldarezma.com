@@ -6,6 +6,7 @@ import { FaUserCircle } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
+import testimonialData from "@/utils/testimonial.json";
 
 import "swiper/css";
 import "swiper/css/autoplay";
@@ -24,7 +25,7 @@ const TestimonialCard = (props: { name: string; text: string }) => {
       </Typography.Heading>
       <Typography.Paragraph
         size="base"
-        className="text-neutral-100 text-center"
+        className="text-neutral-100 text-center min-h-[200px]"
       >
         &ldquo;{text}&ldquo;
       </Typography.Paragraph>
@@ -38,7 +39,7 @@ export default function Testimonial() {
 
   return (
     <section className="testimoni bg-neutral-50">
-      <div className="container mx-auto px-5 py-10">
+      <div className="container mx-auto px-5 pb-10">
         <Typography.Heading
           level={2}
           className="text-primary-600 text-center mb-6 md:!text-5xl !text-3xl"
@@ -78,57 +79,16 @@ export default function Testimonial() {
                 slidesPerView: 4,
               },
             }}
-            onSlideChange={() => console.log("slide change")}
             onSwiper={(swiper) => (swiperRef.current = swiper)}
           >
-            <SwiperSlide>
-              <TestimonialCard
-                name="Umar Hisyam Sungkar"
-                text="Semoga Allah membalas kebaikan dari Alda & StraightUp Digital. Jazakumullahu Khairan"
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <TestimonialCard
-                name="Umar Hisyam Sungkar"
-                text="Semoga Allah membalas kebaikan dari Alda & StraightUp Digital. Jazakumullahu Khairan"
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <TestimonialCard
-                name="Umar Hisyam Sungkar"
-                text="Semoga Allah membalas kebaikan dari Alda & StraightUp Digital. Jazakumullahu Khairan"
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <TestimonialCard
-                name="Umar Hisyam Sungkar"
-                text="Semoga Allah membalas kebaikan dari Alda & StraightUp Digital. Jazakumullahu Khairan"
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <TestimonialCard
-                name="Umar Hisyam Sungkar"
-                text="Semoga Allah membalas kebaikan dari Alda & StraightUp Digital. Jazakumullahu Khairan"
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <TestimonialCard
-                name="Umar Hisyam Sungkar"
-                text="Semoga Allah membalas kebaikan dari Alda & StraightUp Digital. Jazakumullahu Khairan"
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <TestimonialCard
-                name="Umar Hisyam Sungkar"
-                text="Semoga Allah membalas kebaikan dari Alda & StraightUp Digital. Jazakumullahu Khairan"
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <TestimonialCard
-                name="Umar Hisyam Sungkar"
-                text="Semoga Allah membalas kebaikan dari Alda & StraightUp Digital. Jazakumullahu Khairan"
-              />
-            </SwiperSlide>
+            {testimonialData.map((testimonial, index) => (
+              <SwiperSlide key={index}>
+                <TestimonialCard
+                  name={testimonial.name}
+                  text={testimonial.text}
+                />
+              </SwiperSlide>
+            ))}
           </Swiper>
         </div>
       </div>
