@@ -5,6 +5,7 @@ import Benefit from "./_components/Benefit";
 import Material from "./_components/Material";
 import Testimonial from "./_components/Testimonial";
 import Certification from "./_components/Certification";
+import StudyCase from "./_components/StudyCase";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Benefit />
       <Material />
       <Testimonial />
+      <StudyCase />
     </>
   );
 }
