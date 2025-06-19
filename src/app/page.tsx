@@ -8,6 +8,7 @@ import Certification from "./_components/Certification";
 import StudyCase from "./_components/StudyCase";
 import Documentation from "./_components/Documentation";
 import Pricing from "./_components/Pricing";
+import Footer from "./_components/Footer";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <StudyCase />
       <Documentation />
       <Pricing />
+      <Footer />
     </>
   );
 }

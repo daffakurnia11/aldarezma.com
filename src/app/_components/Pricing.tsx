@@ -6,7 +6,7 @@ import clsx from "clsx";
 export default function Pricing() {
   return (
     <section className="testimoni bg-primary-600">
-      <div className="container mx-auto px-5 pb-10 -mt-[1px]">
+      <div className="container mx-auto px-5 -mt-[1px]">
         <div className="grid max-w-[335px] md:max-w-[690px] md:grid-cols-2 xl:max-w-full xl:grid-cols-4 gap-5 mx-auto">
           {pricingData.map((item, index) => (
             <div
