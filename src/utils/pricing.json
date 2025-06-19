@@ -1,0 +1,109 @@
+[
+  {
+    "name": "CPAS Specialist",
+    "date": "19 Juli 2025",
+    "day_count": 1,
+    "is_best_seller": false,
+    "benefit": [
+      "Knowledge & Practical Strategy",
+      "Material (PPT)",
+      "Merchandise Exclusive",
+      "Akses Komunitas Brand Owner & Marketer",
+      "Lunch & Coffee Break"
+    ],
+    "pricing": {
+      "early_bird": {
+        "original_price": 2200000,
+        "discounted_price": 1599000
+      },
+      "pre_sale": {
+        "original_price": 2200000,
+        "discounted_price": 1899000
+      },
+      "regular": {
+        "original_price": 2200000
+      }
+    }
+  },
+  {
+    "name": "TikTok Specialist",
+    "date": "20 Juli 2025",
+    "day_count": 1,
+    "is_best_seller": false,
+    "benefit": [
+      "Knowledge & Practical Strategy",
+      "Material (PPT)",
+      "Merchandise Exclusive",
+      "Akses Komunitas Brand Owner & Marketer",
+      "Lunch & Coffee Break"
+    ],
+    "pricing": {
+      "early_bird": {
+        "original_price": 2200000,
+        "discounted_price": 1599000
+      },
+      "pre_sale": {
+        "original_price": 2200000,
+        "discounted_price": 1899000
+      },
+      "regular": {
+        "original_price": 2200000
+      }
+    }
+  },
+  {
+    "name": "Paket Combo",
+    "date": "19-20 Juli 2025",
+    "day_count": 2,
+    "is_best_seller": true,
+    "benefit": [
+      "Knowledge & Practical Strategy",
+      "Material (PPT)",
+      "Merchandise Exclusive",
+      "Akses Komunitas Brand Owner & Marketer",
+      "Lunch & Coffee Break",
+      "Penginapan 1 Malam*"
+    ],
+    "pricing": {
+      "early_bird": {
+        "original_price": 3500000,
+        "discounted_price": 2799000
+      },
+      "pre_sale": {
+        "original_price": 3500000,
+        "discounted_price": 2999000
+      },
+      "regular": {
+        "original_price": 3500000
+      }
+    }
+  },
+  {
+    "name": "Paket Ultimate Growth",
+    "date": "19-20 Juli 2025",
+    "day_count": 2,
+    "is_best_seller": false,
+    "benefit": [
+      "Knowledge & Practical Strategy",
+      "Material (PPT)",
+      "Merchandise Exclusive",
+      "Akses Komunitas Brand Owner & Marketer",
+      "Lunch & Coffee Break",
+      "Penginapan 1 Malam*",
+      "Private Mentorship (1x 60 menit Online)"
+    ],
+    "pricing": {
+      "early_bird": {
+        "original_price": 6000000,
+        "discounted_price": 5000000
+      },
+      "pre_sale": {
+        "original_price": 6000000,
+        "discounted_price": 5500000
+      },
+      "regular": {
+        "original_price": 6000000
+      }
+    }
+  }
+]
