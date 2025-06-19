@@ -4,6 +4,7 @@ import React from "react";
 import Typography from "@/components/typography";
 import { MdOutlineClose, MdOutlineMenu } from "react-icons/md";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -37,14 +38,16 @@ export default function Navbar() {
             Harga
           </Typography.Paragraph>
         </button>
-        <button className="cursor-pointer bg-secondary-600 rounded-base py-2 px-4">
-          <Typography.Paragraph
-            size="lg"
-            className="text-primary-600 font-medium"
-          >
-            Daftar Sekarang!
-          </Typography.Paragraph>
-        </button>
+        <Link href={"https://bit.ly/WorkshopAldaJKT"} target="_blank">
+          <button className="cursor-pointer bg-secondary-600 rounded-base py-2 px-4">
+            <Typography.Paragraph
+              size="lg"
+              className="text-primary-600 font-medium"
+            >
+              Daftar Sekarang!
+            </Typography.Paragraph>
+          </button>
+        </Link>
       </motion.div>
 
       <div className="relative container z-50 mx-auto flex items-center justify-between w-full bg-primary-600 h-full px-5">
@@ -84,14 +87,16 @@ export default function Navbar() {
               Harga
             </Typography.Paragraph>
           </button>
-          <button className="cursor-pointer bg-secondary-600 rounded-base py-2 px-4">
-            <Typography.Paragraph
-              size="lg"
-              className="text-primary-600 font-medium"
-            >
-              Daftar Sekarang!
-            </Typography.Paragraph>
-          </button>
+          <Link href={"https://bit.ly/WorkshopAldaJKT"} target="_blank">
+            <button className="cursor-pointer bg-secondary-600 rounded-base py-2 px-4">
+              <Typography.Paragraph
+                size="lg"
+                className="text-primary-600 font-medium"
+              >
+                Daftar Sekarang!
+              </Typography.Paragraph>
+            </button>
+          </Link>
         </div>
       </div>
     </div>

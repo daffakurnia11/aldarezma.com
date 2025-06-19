@@ -1,5 +1,6 @@
 import Typography from "@/components/typography";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 export default function Headline() {
@@ -32,15 +33,17 @@ export default function Headline() {
             &ldquo;For Big Sale Season with CPAS & TIKTOK Ads&rdquo;
           </Typography.Heading>
           <div className="flex justify-center md:justify-start">
-            <button className="cursor-pointer bg-secondary-600 rounded-base py-2 px-4">
-              <Typography.Heading
-                level={6}
-                as={"span"}
-                className="text-primary-600 font-medium"
-              >
-                Daftar Sekarang!
-              </Typography.Heading>
-            </button>
+            <Link href={"https://bit.ly/WorkshopAldaJKT"} target="_blank">
+              <button className="cursor-pointer bg-secondary-600 rounded-base py-2 px-4">
+                <Typography.Heading
+                  level={6}
+                  as={"span"}
+                  className="text-primary-600 font-medium"
+                >
+                  Daftar Sekarang!
+                </Typography.Heading>
+              </button>
+            </Link>
           </div>
         </div>
       </div>

@@ -5,6 +5,7 @@ import Typography from "@/components/typography";
 import Place from "./Place";
 import Contact from "./Contact";
 import Copyright from "./Copyright";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -29,15 +30,17 @@ export default function Footer() {
         <Countdown />
         <Place />
         <div className="flex justify-center my-10">
-          <button className="cursor-pointer bg-secondary-600 rounded-base py-2 px-4">
-            <Typography.Heading
-              level={5}
-              as={"span"}
-              className="text-primary-600 text-lg lg:!text-2xl"
-            >
-              Daftar Sekarang!
-            </Typography.Heading>
-          </button>
+          <Link href={"https://bit.ly/WorkshopAldaJKT"} target="_blank">
+            <button className="cursor-pointer bg-secondary-600 rounded-base py-2 px-4">
+              <Typography.Heading
+                level={5}
+                as={"span"}
+                className="text-primary-600 text-lg lg:!text-2xl"
+              >
+                Daftar Sekarang!
+              </Typography.Heading>
+            </button>
+          </Link>
         </div>
         <Contact />
         <Copyright />
