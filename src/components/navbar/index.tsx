@@ -5,9 +5,17 @@ import Typography from "@/components/typography";
 import { MdOutlineClose, MdOutlineMenu } from "react-icons/md";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { useSectionRefs } from "@/context/SectionRefsContext";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = React.useState(false);
+  const { benefitRef, materialRef, testimonialRef, pricingRef, scrollTo } =
+    useSectionRefs();
+
+  const handleClick = (ref: React.RefObject<HTMLElement | null>) => {
+    scrollTo(ref);
+    setIsOpen(false); // close mobile menu
+  };
 
   return (
     <div className="relative z-50 w-full h-[70px] bg-primary-600 flex items-center">
@@ -18,22 +26,34 @@ export default function Navbar() {
         transition={{ type: "tween", duration: 0.5, delay: 0.3 }}
         className="md:hidden absolute z-40 flex flex-col items-center justify-center gap-8 bg-primary-600 w-full py-4 rounded-b-lg"
       >
-        <button className="cursor-pointer">
+        <button
+          className="cursor-pointer"
+          onClick={() => handleClick(benefitRef)}
+        >
           <Typography.Paragraph size="lg" className="text-neutral-100">
             Benefit
           </Typography.Paragraph>
         </button>
-        <button className="cursor-pointer">
+        <button
+          className="cursor-pointer"
+          onClick={() => handleClick(materialRef)}
+        >
           <Typography.Paragraph size="lg" className="text-neutral-100">
             Materi
           </Typography.Paragraph>
         </button>
-        <button className="cursor-pointer">
+        <button
+          className="cursor-pointer"
+          onClick={() => handleClick(testimonialRef)}
+        >
           <Typography.Paragraph size="lg" className="text-neutral-100">
             Testimoni
           </Typography.Paragraph>
         </button>
-        <button className="cursor-pointer">
+        <button
+          className="cursor-pointer"
+          onClick={() => handleClick(pricingRef)}
+        >
           <Typography.Paragraph size="lg" className="text-neutral-100">
             Harga
           </Typography.Paragraph>
@@ -67,22 +87,34 @@ export default function Navbar() {
 
         {/* Desktop Menu Navbar */}
         <div className="md:flex hidden items-center justify-center w-fit lg:gap-8 gap-4">
-          <button className="cursor-pointer">
+          <button
+            className="cursor-pointer"
+            onClick={() => handleClick(benefitRef)}
+          >
             <Typography.Paragraph size="lg" className="text-neutral-100">
               Benefit
             </Typography.Paragraph>
           </button>
-          <button className="cursor-pointer">
+          <button
+            className="cursor-pointer"
+            onClick={() => handleClick(materialRef)}
+          >
             <Typography.Paragraph size="lg" className="text-neutral-100">
               Materi
             </Typography.Paragraph>
           </button>
-          <button className="cursor-pointer">
+          <button
+            className="cursor-pointer"
+            onClick={() => handleClick(testimonialRef)}
+          >
             <Typography.Paragraph size="lg" className="text-neutral-100">
               Testimoni
             </Typography.Paragraph>
           </button>
-          <button className="cursor-pointer">
+          <button
+            className="cursor-pointer"
+            onClick={() => handleClick(pricingRef)}
+          >
             <Typography.Paragraph size="lg" className="text-neutral-100">
               Harga
             </Typography.Paragraph>

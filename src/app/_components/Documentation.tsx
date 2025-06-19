@@ -16,7 +16,7 @@ export default function Documentation() {
 
   return (
     <section className="testimoni bg-primary-600">
-      <div className="container mx-auto px-5 py-10">
+      <div className="container mx-auto px-5 pt-10">
         <Typography.Heading
           level={2}
           className="text-secondary-600 text-center mb-6 md:!text-5xl !text-3xl"

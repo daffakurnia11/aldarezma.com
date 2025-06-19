@@ -39,7 +39,7 @@ export default function Testimonial() {
 
   return (
     <section className="testimoni bg-neutral-50">
-      <div className="container mx-auto px-5 pb-10">
+      <div className="container mx-auto px-5 py-10">
         <Typography.Heading
           level={2}
           className="text-primary-600 text-center mb-6 md:!text-5xl !text-3xl"

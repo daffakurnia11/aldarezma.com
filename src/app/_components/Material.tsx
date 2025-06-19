@@ -4,7 +4,7 @@ import React from "react";
 export default function Material() {
   return (
     <section className="material bg-neutral-50">
-      <div className="container mx-auto px-5 py-10">
+      <div className="container mx-auto px-5 pt-10">
         <Typography.Heading
           level={2}
           className="text-primary-600 mb-6 md:!text-5xl !text-3xl"
