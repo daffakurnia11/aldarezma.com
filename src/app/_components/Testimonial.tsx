@@ -46,15 +46,15 @@ export default function Testimonial() {
         >
           Kata Orang
         </Typography.Heading>
-        <div className="max-w-[1150px] mx-auto relative">
+        <div className="2xl:!max-w-[1150px] mx-auto relative" style={{ maxWidth: "calc(100% - 80px)" }}>
           <FaChevronLeft
             size={40}
-            className="cursor-pointer text-secondary-600 absolute -left-3 top-1/2 -translate-y-1/2 md:-translate-x-full"
+            className="cursor-pointer text-secondary-600 absolute -left-3 md:left-0 top-1/2 -translate-y-1/2 md:-translate-x-full"
             onClick={() => swiperRef.current!.slidePrev()}
           />
           <FaChevronRight
             size={40}
-            className="cursor-pointer text-secondary-600 absolute -right-3 top-1/2 -translate-y-1/2 md:translate-x-full"
+            className="cursor-pointer text-secondary-600 absolute -right-3 md:right-0 top-1/2 -translate-y-1/2 md:translate-x-full"
             onClick={() => swiperRef.current!.slideNext()}
           />
           <Swiper
@@ -72,7 +72,7 @@ export default function Testimonial() {
               768: {
                 slidesPerView: 2,
               },
-              1024: {
+              992: {
                 slidesPerView: 3,
               },
               1280: {

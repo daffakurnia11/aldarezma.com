@@ -23,15 +23,15 @@ export default function Documentation() {
         >
           Dokumentasi
         </Typography.Heading>
-        <div className="max-w-[1150px] mx-auto relative">
+        <div className="mx-auto relative" style={{ maxWidth: "calc(100% - 80px)" }}>
           <FaChevronLeft
             size={40}
-            className="cursor-pointer text-secondary-600 absolute -left-3 top-1/2 -translate-y-1/2 md:-translate-x-full"
+            className="cursor-pointer text-secondary-600 absolute -left-3 md:left-0 top-1/2 -translate-y-1/2 md:-translate-x-full"
             onClick={() => swiperRef.current!.slidePrev()}
           />
           <FaChevronRight
             size={40}
-            className="cursor-pointer text-secondary-600 absolute -right-3 top-1/2 -translate-y-1/2 md:translate-x-full"
+            className="cursor-pointer text-secondary-600 absolute -right-3 md:right-0 top-1/2 -translate-y-1/2 md:translate-x-full"
             onClick={() => swiperRef.current!.slideNext()}
           />
           <Swiper
@@ -46,26 +46,31 @@ export default function Documentation() {
               640: {
                 slidesPerView: 1,
               },
-              768: {
+              992: {
                 slidesPerView: 2,
               },
-              1024: {
+              1280: {
                 slidesPerView: 3,
+              },
+              1440: {
+                slidesPerView: 4,
               },
             }}
             onSwiper={(swiper) => (swiperRef.current = swiper)}
           >
             {[...Array(12)].map((testimonial, index) => (
               <SwiperSlide key={index}>
-                <Image
-                  src={`/img/documentation/photo-${index + 1}.JPG`}
-                  alt="Alda Rezma Documentation Gallery"
-                  width={0}
-                  height={0}
-                  sizes="100vw"
-                  style={{ width: "100%", height: "auto" }}
-                  className="rounded-lg"
-                />
+                <div className="w-full max-w-[280px] sm:max-w-[380px] md:max-w-full mx-auto">
+                  <Image
+                    src={`/img/documentation/photo-${index + 1}.JPG`}
+                    alt="Alda Rezma Documentation Gallery"
+                    width={0}
+                    height={0}
+                    sizes="100vw"
+                    style={{ width: "100%", height: "auto" }}
+                    className="rounded-lg"
+                  />
+                </div>
               </SwiperSlide>
             ))}
           </Swiper>
